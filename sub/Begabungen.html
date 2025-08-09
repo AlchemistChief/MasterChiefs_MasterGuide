@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Begabungen - MasterChief's MasterGuide</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+
+<body>
+    <!-- ───────── Topbar/Header ───────── -->
+    <div id="topbar">
+        <div id="hamburger" onclick="toggleSidemenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1>Masterchief's MasterGuide</h1>
+    </div>
+
+    <!-- ───────── Sidebar Navigation ───────── -->
+    <nav id="sidemenu" class="">
+        <ul>
+            <li><a href="../index.html">Startseite</a></li>
+            <li><a href="#begabung">Begabungen</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <button class="btn" onclick="history.back()">← Zurück</button>
+
+        <h2 id="begabung">2.1 Begabung - Bilder</h2>
+
+        <div class="image-container">
+            <img src="../assets/images/Begabung/Misch1.png" alt="Misch Kampf 1" />
+            <img src="../assets/images/Begabung/Misch2.png" alt="Misch Kampf 2" />
+            <img src="../assets/images/Begabung/Misch3.png" alt="Misch Kampf 3" />
+            <img src="../assets/images/Begabung/Misch4.png" alt="Misch Kampf 4" />
+        </div>
+    </main>
+
+    <script>
+        function toggleSidemenu() {
+            document.getElementById('sidemenu').classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>

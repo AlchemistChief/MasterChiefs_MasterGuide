@@ -33,16 +33,34 @@
 }
 
 /* ───────── Media Elements ───────── */
-.media-img,
-.media-video {
-    max-width: 100%;
-    border-radius: 8px;
-    display: block;
-    margin: 1rem 0;
+.image-container {
+    float: right;
+    /* Standard: rechts ausrichten, kann mit Klasse geändert werden */
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    /* Für abgerundete Ecken bei Bildern */
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
-.media-video {
-    background-color: #000;
+/* Optional: links ausrichten */
+.image-container.align-left {
+    float: left;
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+.image-container img {
+    display: block;
+    /* Entfernt Zwischenraum unter Bildern */
+    width: 100%;
+    height: auto;
+    border-bottom: none;
+    /* kein Abstand */
+    margin: 0;
+    padding: 0;
 }
 
 /* ───────── Table Styling ───────── */
@@ -68,4 +86,34 @@ td {
 
 tr:hover {
     background-color: #2a2a2a;
+}
+
+/* ───────── Button Styling ───────── */
+.btn {
+    display: inline-block;
+    background-color: #6b008b;
+    color: #f0f0f0;
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #00ac09;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+
+.btn:active {
+    background-color: #ff0000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
 }
