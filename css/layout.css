@@ -21,7 +21,7 @@
 }
 
 /* ───────── Side Menu ───────── */
-#sidemenu {
+.sidemenu {
     position: fixed;
     top: 2rem;
     left: -100%;

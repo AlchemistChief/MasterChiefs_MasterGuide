@@ -8,7 +8,8 @@
     <meta property="og:title" content="MasterChief's MasterGuide" />
     <meta property="og:description" content="Die beste Anleitung für MasterChiefs Fans." />
     <meta property="og:url" content="https://github.com/AlchemistChief/MasterChiefs_MasterGuide" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/AlchemistChief/MasterChiefs_MasterGuide/refs/heads/main/favicon.ico" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/AlchemistChief/MasterChiefs_MasterGuide/refs/heads/main/favicon.ico" />
     <title>Begabungen - MasterChief's MasterGuide</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/base.css" />
@@ -29,7 +30,7 @@
     </div>
 
     <!-- ───────── Sidebar Navigation ───────── -->
-    <nav id="sidemenu" class="">
+    <nav id="sidemenu" class="sidemenu">
         <ul>
             <li><a href="../index.html">Startseite</a></li>
             <li><a href="#begabung">Begabungen</a></li>
@@ -41,34 +42,52 @@
 
         <h2 id="begabung">2.1 Begabung - Bilder</h2>
 
-        <table>
-            <thead>
-                <tr>
-                    <th style="text-align: center; font-size: 1.5rem; padding: 1rem 0;">Misch Kampf</th>
-                    <th style="text-align: center; font-size: 1.5rem; padding: 1rem 0;">Raub Set</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="vertical-align: top;">
-                        <div style="align-items: center">
-                            <img src="../assets/images/Begabung/Misch1.png" alt="Misch Kampf 1" />
-                            <img src="../assets/images/Begabung/Misch2.png" alt="Misch Kampf 2" />
-                            <img src="../assets/images/Begabung/Misch3.png" alt="Misch Kampf 3" />
-                            <img src="../assets/images/Begabung/Misch4.png" alt="Misch Kampf 4" />
-                        </div>
-                    </td>
-                    <td style="vertical-align: top;">
-                        <div class="image-container" style="align-items: center">
-                            <img src="../assets/images/Begabung/Raub1.png" alt="Raub Set 1" />
-                            <img src="../assets/images/Begabung/Raub2.png" alt="Raub Set 2" />
-                            <img src="../assets/images/Begabung/Raub3.png" alt="Raub Set 3" />
-                            <img src="../assets/images/Begabung/Raub4.png" alt="Raub Set 4" />
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="card">
+            <div class="image-grid">
+
+                <div class="image-container image-list">
+                    <h3>Misch Kampf</h3>
+                    <img src="../assets/images/Begabung/Misch1.png" alt="Misch Kampf 1" />
+                    <img src="../assets/images/Begabung/Misch2.png" alt="Misch Kampf 2" />
+                    <img src="../assets/images/Begabung/Misch3.png" alt="Misch Kampf 3" />
+                    <img src="../assets/images/Begabung/Misch4.png" alt="Misch Kampf 4" />
+                </div>
+
+                <div class="image-container image-list">
+                    <h3>Raub Set</h3>
+                    <img src="../assets/images/Begabung/Raub1.png" alt="Raub Set 1" />
+                    <img src="../assets/images/Begabung/Raub2.png" alt="Raub Set 2" />
+                    <img src="../assets/images/Begabung/Raub3.png" alt="Raub Set 3" />
+                    <img src="../assets/images/Begabung/Raub4.png" alt="Raub Set 4" />
+                </div>
+
+                <div class="image-container image-list">
+                    <h3>Berserker</h3>
+                    <img src="../assets/images/Begabung/Bersi1.png" alt="Bersi 1" />
+                    <img src="../assets/images/Begabung/Bersi2.png" alt="Bersi 2" />
+                    <img src="../assets/images/Begabung/Bersi3.png" alt="Bersi 3" />
+                    <img src="../assets/images/Begabung/Bersi4.png" alt="Bersi 4" />
+                </div>
+
+                <div class="image-container image-list">
+                    <h3>Schützen</h3>
+                    <img src="../assets/images/Begabung/Marksman1.png" alt="Marksman 1" />
+                    <img src="../assets/images/Begabung/Marksman2.png" alt="Marksman 2" />
+                    <img src="../assets/images/Begabung/Marksman3.png" alt="Marksman 3" />
+                    <img src="../assets/images/Begabung/Marksman4.png" alt="Marksman 4" />
+                </div>
+
+                <div class="image-container image-list">
+                    <h3>Biker</h3>
+                    <img src="../assets/images/Begabung/Biker1.png" alt="Biker 1" />
+                    <img src="../assets/images/Begabung/Biker2.png" alt="Biker 2" />
+                    <img src="../assets/images/Begabung/Biker3.png" alt="Biker 3" />
+                    <img src="../assets/images/Begabung/Biker4.png" alt="Biker 4" />
+                </div>
+
+            </div>
+        </div>
+
     </main>
 
     <script>
@@ -79,3 +98,72 @@
 </body>
 
 </html>
+
+<!-- <table>
+    <thead>
+        <tr>
+            <th style="text-align: center; font-size: 1.5rem; padding: 1rem 0;">Misch Kampf</th>
+            <th style="text-align: center; font-size: 1.5rem; padding: 1rem 0;">Raub Set</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="vertical-align: top; text-align: center;">
+                <div class="image-container" style="float: none; display: inline-block; width: 40vw; max-width: 400px;">
+                    <img src="../assets/images/Begabung/Misch1.png" alt="Misch Kampf 1"
+                        style="display: block; width: 100%; height: auto;" />
+                    <img src="../assets/images/Begabung/Misch2.png" alt="Misch Kampf 2"
+                        style="display: block; width: 100%; height: auto;" />
+                    <img src="../assets/images/Begabung/Misch3.png" alt="Misch Kampf 3"
+                        style="display: block; width: 100%; height: auto;" />
+                    <img src="../assets/images/Begabung/Misch4.png" alt="Misch Kampf 4"
+                        style="display: block; width: 100%; height: auto;" />
+                </div>
+            </td>
+            <td style="vertical-align: top; text-align: center;">
+                <div class="image-container" style="float: none; display: inline-block; width: 40vw; max-width: 400px;">
+                    <img src="../assets/images/Begabung/Raub1.png" alt="Raub Set 1"
+                        style="display: block; width: 100%; height: auto;" />
+                    <img src="../assets/images/Begabung/Raub2.png" alt="Raub Set 2"
+                        style="display: block; width: 100%; height: auto;" />
+                    <img src="../assets/images/Begabung/Raub3.png" alt="Raub Set 3"
+                        style="display: block; width: 100%; height: auto;" />
+                    <img src="../assets/images/Begabung/Raub4.png" alt="Raub Set 4"
+                        style="display: block; width: 100%; height: auto;" />
+                </div>
+            </td>
+
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th style="text-align: center; font-size: 1.5rem; padding: 1rem 0;">Voll Beserker</th>
+            <th style="text-align: center; font-size: 1.5rem; padding: 1rem 0;">Voll Schützen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="vertical-align: top;">
+                <div class="image-container" style="float: none; display: inline-block; width: auto;">
+                </div>
+            </td>
+            <td style="vertical-align: top;">
+                <div class="image-container" style="float: none; display: inline-block; width: auto;">
+                </div>
+            </td>
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th style="text-align: center; font-size: 1.5rem; padding: 1rem 0;">Voll Biker</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="vertical-align: top;">
+                <div class="image-container" style="align-items: center">
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table> -->
