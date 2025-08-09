@@ -89,12 +89,14 @@
 
     </main>
 
-    <!-- ───────── JavaScript for Hamburger ───────── -->
-    <script>
-        function toggleSidemenu() {
-            document.getElementById('sidemenu').classList.toggle('open');
-        }
-    </script>
+    <!-- ─────────  Lightbox overlay ─────────   -->
+    <div id="lightbox" class="lightbox" style="display:none;">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="Expanded view" />
+    </div>
+
+    <!-- ───────── JavaScript ───────── -->
+    <script src="index.js"></script>
 </body>
 
 </html>

@@ -91,6 +91,38 @@
     clear: both;
 }
 
+/* ───────── Lightbox Styling ───────── */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* The expanded image */
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000;
+}
+
+/* Close button */
+.lightbox .close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    user-select: none; }
+
 /* ───────── Table Styling ───────── */
 table {
     width: 100%;
