@@ -1,1 +1,102 @@
-Hello World
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Übersicht</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+    <!-- ───────── Topbar/Header ───────── -->
+    <div id="topbar">
+        <div id="hamburger" onclick="toggleSidemenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1>Übersicht</h1>
+    </div>
+
+    <!-- ───────── Sidebar Navigation ───────── -->
+    <nav id="sidemenu">
+        <ul>
+            <li><a href="#einleitung">1. Einleitung</a></li>
+            <li><a href="#allgemein">2. Allgemein</a>
+                <ul>
+                    <li><a href="#begabung">2.1 Begabung</a></li>
+                    <li><a href="#helden">2.2 Helden</a></li>
+                    <li><a href="#waffen">2.3 Waffen</a></li>
+                    <li><a href="#formation">2.4 Formation</a></li>
+                    <li><a href="#gear-a">2.5 Gear</a></li>
+                </ul>
+            </li>
+            <li><a href="#intel">3. Intel &amp; Information</a>
+                <ul>
+                    <li><a href="#gegner">3.1 Gegner</a></li>
+                    <li><a href="#statistiken">3.2 Statistiken</a></li>
+                    <li><a href="#gear-b">3.3 Gear</a></li>
+                    <li><a href="#fifty">3.4 50/50</a></li>
+                </ul>
+            </li>
+            <li><a href="#verteidigung">4. Verteidigung</a>
+                <ul>
+                    <li><a href="#mauer">4.1 Mauer</a>
+                        <ul>
+                            <li><a href="#mauer-helden">4.1.1 Helden</a></li>
+                            <li><a href="#mauer-waffen">4.1.2 Waffen</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#verteidigung-formation">4.2 Formation</a></li>
+                    <li><a href="#gear-c">4.3 Gear</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ───────── Main Content ───────── -->
+    <main>
+        <section id="einleitung" class="card">
+            <h2>1. Einleitung</h2>
+        </section>
+
+        <section id="allgemein" class="card">
+            <h2>2. Allgemein</h2>
+            <h3 id="begabung">2.1 Begabung</h3>
+            <h3 id="helden">2.2 Helden</h3>
+            <h3 id="waffen">2.3 Waffen</h3>
+            <h3 id="formation">2.4 Formation</h3>
+            <h3 id="gear-a">2.5 Gear</h3>
+        </section>
+
+        <section id="intel" class="card">
+            <h2>3. Intel &amp; Information</h2>
+            <h3 id="gegner">3.1 Gegner</h3>
+            <h3 id="statistiken">3.2 Statistiken</h3>
+            <h3 id="gear-b">3.3 Gear</h3>
+            <h3 id="fifty">3.4 50/50</h3>
+        </section>
+
+        <section id="verteidigung" class="card">
+            <h2>4. Verteidigung</h2>
+            <h3 id="mauer">4.1 Mauer</h3>
+            <h4 id="mauer-helden">4.1.1 Helden</h4>
+            <h4 id="mauer-waffen">4.1.2 Waffen</h4>
+            <h3 id="verteidigung-formation">4.2 Formation</h3>
+            <h3 id="gear-c">4.3 Gear</h3>
+        </section>
+    </main>
+
+    <!-- ───────── JavaScript for Hamburger ───────── -->
+    <script>
+        function toggleSidemenu() {
+            document.getElementById('sidemenu').classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+/* ───────── Topbar/Header ───────── */
+#topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    height: 1rem;
+}
+
+#topbar h1 {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+/* ───────── Side Menu ───────── */
+#sidemenu {
+    position: fixed;
+    top: 2rem;
+    left: -100%;
+    width: 20vw;
+    max-width: 200px;
+    min-width: 150px;
+    height: 100%;
+    background-color: #1c1c1c;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+    transition: left 0.3s ease;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+#sidemenu.open {
+    left: 0;
+}
+
+#sidemenu #hamburger {
+    align-self: flex-end;
+    margin-bottom: 2rem;
+}
+
+#sidemenu h3 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+#sidemenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidemenu ul ul {
+    padding-left: 1.2em;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    margin-left: 0.5em;
+}
+
+#sidemenu ul ul ul {
+    padding-left: 1.2em;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#sidemenu li {
+    margin: 0.5rem 0;
+    position: relative;
+}
+
+#sidemenu a {
+    color: #ccc;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+#sidemenu a:hover {
+    color: #fff;
+}
